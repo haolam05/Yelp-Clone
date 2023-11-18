@@ -5,7 +5,16 @@ document.getElementById('consumer-header').innerHTML = `
         <div id="header-search-bars">
           <input class="header-search-bar" id="search-activity" type="text"
             placeholder="things to do, nail salons, plumbers">
+
+
           <input class="header-search-bar" id="search-location" type="text" placeholder="Seattle, WA 98104">
+          <div id='header-locations' class='hidden'>
+            <div class='header-location'>
+              <i class="fa-solid fa-location-dot" style="color: #3e74d0;"></i>
+              Current Location
+            </div>
+          </div>
+
           <a id="header-search-icon">
             <svg width="24" height="24" fill="#FFFFFF">
               <path

@@ -60,3 +60,16 @@ function showHideSeeMoreEffect(targetID) {
   })
 }
 showHideSeeMoreEffect('see-mores-container');
+
+
+function onFocusEffect(id) {
+  const el = document.getElementById('search-location');
+  console.log(el.classList)
+  el.addEventListener('focusin', e => {
+    document.getElementById(id).classList.remove('hidden')
+  })
+  el.addEventListener('focusout', e => {
+    document.getElementById(id).classList.add('hidden')
+  })
+}
+onFocusEffect('header-locations');
