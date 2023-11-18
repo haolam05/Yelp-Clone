@@ -17,24 +17,33 @@ function iconsHoverEffect(id) {
     }
   })
 }
-// iconsHoverEffect(1);
-// iconsHoverEffect(4);
-// iconsHoverEffect(6);
-// iconsHoverEffect(7);
-// iconsHoverEffect(8);
-// iconsHoverEffect(11);
+iconsHoverEffect(1);
+iconsHoverEffect(4);
+iconsHoverEffect(6);
+iconsHoverEffect(7);
+iconsHoverEffect(8);
+iconsHoverEffect(11);
 
 
-function openMenuEffect(targetID) {
+function showHideEffect(targetID) {
   window.addEventListener("click", e => {
     e.preventDefault();
-    const id = e.target.classList[0]
-    if (id == targetID) {
-      document.getElementById(targetID).classList.remove('hidden')
-    } else {
-      document.getElementById(targetID).classList.add('hidden')
+    const el = document.getElementById(targetID);
+    const parent = e.target.closest('#category-8');
+
+    if (parent) {
+      if (el.classList.contains('clicked')) {
+        el.classList.add('hidden');
+        el.classList.remove('clicked')
+        parent.setAttribute('style', 'background-color: white')
+      } else {
+        parent.setAttribute('style', 'background-color: rgb(235, 235, 235)')
+        el.classList.remove('hidden');
+        el.classList.add('clicked');
+      }
     }
   })
 }
-// openMenuEffect("countries-menu");
-// openMenuEffect("languages-menu");
+showHideEffect("countries-menu");
+showHideEffect("languages-menu");
+showHideEffect('see-mores-container');
