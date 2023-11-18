@@ -17,12 +17,12 @@ function iconsHoverEffect(id) {
     }
   })
 }
-iconsHoverEffect(1);
-iconsHoverEffect(4);
-iconsHoverEffect(6);
-iconsHoverEffect(7);
-iconsHoverEffect(8);
-iconsHoverEffect(11);
+// iconsHoverEffect(1);
+// iconsHoverEffect(4);
+// iconsHoverEffect(6);
+// iconsHoverEffect(7);
+// iconsHoverEffect(8);
+// iconsHoverEffect(11);
 
 
 function openMenuEffect(targetID) {
@@ -36,5 +36,5 @@ function openMenuEffect(targetID) {
     }
   })
 }
-openMenuEffect("countries-menu");
-openMenuEffect("languages-menu");
+// openMenuEffect("countries-menu");
+// openMenuEffect("languages-menu");
