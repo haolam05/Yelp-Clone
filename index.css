@@ -282,3 +282,62 @@ a,
 .category {
   cursor: pointer;
 }
+
+.footer-title {
+  font-weight: bold;
+}
+
+#footer-container {
+  background-color: rgba(247, 247, 247, 1);
+  padding: 55px;
+}
+
+#footer-wrapper {
+  display: grid;
+  grid-template-areas:
+    "about discover business languages"
+    "copyright copyright copyright copyright";
+  row-gap: 50px;
+  margin: 0 100px;
+}
+
+#footer-about {
+  grid-area: about;
+}
+
+#footer-discover {
+  grid-area: discover;
+}
+
+#footer-business {
+  grid-area: business;
+}
+
+#footer-languages {
+  grid-area: languages;
+}
+
+#footer-copyright {
+  grid-area: copyright;
+  color: rgb(169, 169, 169);
+  font-size: 14px;
+}
+
+#footer-about,
+#footer-discover,
+#footer-business,
+#footer-location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#footer-wrapper a {
+  color: rgb(169, 169, 169);
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.footer-title {
+  margin-bottom: 10px;
+}
