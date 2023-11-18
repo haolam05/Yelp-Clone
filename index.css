@@ -150,7 +150,8 @@ a {
 }
 
 .card-review a,
-.num-photos a {
+.num-photos a,
+#show-more-activity a {
   color: #1490ae;
   font-weight: bold;
 }
@@ -231,7 +232,6 @@ p {
 }
 
 #categories-wrapper {
-  border-top: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,4 +261,24 @@ p {
 
 .category:hover {
   box-shadow: 0px 0px 20px rgb(162, 160, 160);
+}
+
+#line-break {
+  width: 100%;
+  border-top: 1px solid var(--border-color);
+  margin-top: 30px;
+}
+
+#show-more-activity {
+  margin-bottom: 60px;
+  color: #1490ae;
+  display: flex;
+  align-items: center;
+}
+
+a,
+.card-emoji,
+.card2-emoji,
+.category {
+  cursor: pointer;
 }
