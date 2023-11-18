@@ -489,3 +489,41 @@ a,
   align-items: center;
   justify-content: center;
 }
+
+#header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#yelp-for-business {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  color: white;
+  padding: 5px 15px;
+}
+
+.header-link:hover {
+  text-decoration: none;
+  background-color: var(--light-gray);
+  border-radius: 5px;
+}
+
+#sign-in,
+#sign-up {
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#sign-in {
+  border: 1px solid var(--border-color);
+}
+
+#sign-up {
+  background-color: red;
+}
