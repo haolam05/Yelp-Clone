@@ -5,6 +5,48 @@ document.getElementById('consumer-header').innerHTML = `
         <div id="header-search-bars">
           <input class="header-search-bar" id="search-activity" type="text"
             placeholder="things to do, nail salons, plumbers">
+          <div id='header-activities' class='hidden'>
+            <div class='header-activity'>
+              <i class="fa-regular fa-clock" style="color: #747576;"></i>
+              2 stars
+            </div>
+            <div class='header-activity'>
+              <i class="fa-regular fa-clock" style="color: #747576;"></i>
+              2 stars
+            </div>
+            <div class='header-activity'>
+              <i class="fa-regular fa-clock" style="color: #747576;"></i>
+              Parisanne D.
+            </div>
+            <div class='header-activity'>
+              <i class="fa-regular fa-clock" style="color: #747576;"></i>
+              Home Services
+            </div>
+            <div class='header-activity'>
+              <i class="fa-solid fa-utensils" style="color: #747576;"></i>
+              Restaurants
+            </div>
+            <div class='header-activity'>
+              <i class="fa-solid fa-truck" style="color: #747576;"></i>
+              Delivery
+            </div>
+            <div class='header-activity'>
+              <i class="fa-solid fa-basket-shopping" style="color: #747576;"></i>
+              Takeout
+            </div>
+            <div class='header-activity'>
+              <i class="fa-solid fa-calculator" style="color: #747576;"></i>
+              Accountants
+            </div>
+            <div class='header-activity'>
+              <i class="fa-solid fa-faucet" style="color: #747576;"></i>
+              Plumbers
+            </div>
+            <div class='header-activity'>
+              <i class="fa-solid fa-wrench" style="color: #747576;"></i>
+              Auto Repairs
+            </div>
+          </div>
 
 
           <input class="header-search-bar" id="search-location" type="text" placeholder="Seattle, WA 98104">
