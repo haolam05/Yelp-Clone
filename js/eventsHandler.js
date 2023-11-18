@@ -23,3 +23,18 @@ iconsHoverEffect(6);
 iconsHoverEffect(7);
 iconsHoverEffect(8);
 iconsHoverEffect(11);
+
+
+function openMenuEffect(targetID) {
+  window.addEventListener("click", e => {
+    e.preventDefault();
+    const id = e.target.classList[0]
+    if (id == targetID) {
+      document.getElementById(targetID).classList.remove('hidden')
+    } else {
+      document.getElementById(targetID).classList.add('hidden')
+    }
+  })
+}
+openMenuEffect("countries-menu");
+// openMenuEffect("languages-menu");

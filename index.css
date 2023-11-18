@@ -1,5 +1,6 @@
 :root {
   --border-color: rgb(235, 235, 235);
+  --light-gray: rgb(169, 169, 169);
 }
 
 * {
@@ -319,7 +320,7 @@ a,
 
 #footer-copyright {
   grid-area: copyright;
-  color: rgb(169, 169, 169);
+  color: var(--light-gray);
   font-size: 14px;
 }
 
@@ -333,11 +334,47 @@ a,
 }
 
 #footer-wrapper a {
-  color: rgb(169, 169, 169);
+  color: var(--light-gray);
   font-weight: normal;
   font-size: 15px;
 }
 
 .footer-title {
   margin-bottom: 10px;
+}
+
+#footer-languages-menu,
+#footer-countries-menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.footer-title+div>span {
+  color: var(--light-gray);
+}
+
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 250px;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: 25px;
+}
+
+.footer-button {
+  border: none;
+  padding: 15px;
+  background-color: white;
+  text-align: left;
+}
+
+.footer-button:hover {
+  background-color: var(--border-color);
+}
+
+.hidden {
+  opacity: 0;
 }
