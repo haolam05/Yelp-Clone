@@ -63,12 +63,12 @@ locations.innerHTML = [
         </path>
       </svg>
     </div>
-    <div class="footer-buttons" id="languages-menu">
+    <div class="footer-buttons hidden" id="languages-menu">
       <button class="footer-button">Bahasa Malaysia</button>
       <button class="footer-button">Čeština (Česká republika)</button>
       <button class="footer-button">(Malaysia)</button>
       <button class="footer-button">Deutsch (Deutschiland)</button>
-      <button class="footer-button">Deutsch (Österreich)</button>
+      <button class="footer-button">Deustch (Osterreich)</button>
       <button class="footer-button">Deutsch (Schweiz)</button>
       <button class="footer-button">English (Australia)</button>
       <button class="footer-button">English(Belgium)</button>

@@ -37,4 +37,4 @@ function openMenuEffect(targetID) {
   })
 }
 openMenuEffect("countries-menu");
-// openMenuEffect("languages-menu");
+openMenuEffect("languages-menu");

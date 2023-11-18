@@ -371,10 +371,17 @@ a,
   text-align: left;
 }
 
+.footer-button>button {
+  border: none;
+  background-color: white;
+  padding: 15px;
+}
+
 .footer-button:hover {
   background-color: var(--border-color);
 }
 
 .hidden {
-  opacity: 0;
+  /* opacity: 0; */
+  display: none;
 }
