@@ -25,7 +25,22 @@ iconsHoverEffect(8);
 iconsHoverEffect(11);
 
 
-function showHideEffect(targetID) {
+function openMenuEffect(targetID) {
+  window.addEventListener("click", e => {
+    e.preventDefault();
+    const id = e.target.classList[0]
+    if (id == targetID) {
+      document.getElementById(targetID).classList.remove('hidden')
+    } else {
+      document.getElementById(targetID).classList.add('hidden')
+    }
+  })
+}
+openMenuEffect("countries-menu");
+openMenuEffect("languages-menu");
+
+
+function showHideSeeMoreEffect(targetID) {
   window.addEventListener("click", e => {
     e.preventDefault();
     const el = document.getElementById(targetID);
@@ -44,6 +59,4 @@ function showHideEffect(targetID) {
     }
   })
 }
-showHideEffect("countries-menu");
-showHideEffect("languages-menu");
-showHideEffect('see-mores-container');
+showHideSeeMoreEffect('see-mores-container');
