@@ -431,10 +431,10 @@ a,
   height: 575px;
   background-size: cover;
   margin-bottom: 40px;
-  /* animation-name: switch;
+  animation-name: switch;
   animation-duration: 15s;
   animation-iteration-count: infinite;
-  animation-timing-function: steps(1, end); */
+  animation-timing-function: steps(1, end);
 }
 
 @keyframes switch {
@@ -618,14 +618,64 @@ a,
 
 #header-searchbox {
   background-color: red;
-  padding: 10px 10px;
+  padding: 20px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: fit-content;
   gap: 10px;
   font-size: 16px;
   margin-top: -20px;
+  border-radius: 5px;
+}
+
+#switch2:after {
+  content: 'Pho';
+  margin: 0 auto;
+  animation-name: switch2;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-timing-function: steps(1, end);
+}
+
+#switch2:hover {
+  cursor: pointer;
+}
+
+@keyframes switch2 {
+  0% {
+    content: 'Pho';
+  }
+
+  33% {
+    content: 'Home cleaner';
+  }
+
+  66% {
+    content: 'HVAC';
+  }
+}
+
+.switch3:after {
+  content: 'Bone and Broth';
+  animation-name: switch3;
+  animation-iteration-count: infinite;
+  animation-duration: 15s;
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes switch3 {
+  0% {
+    content: 'Bone and Broth';
+  }
+
+  33% {
+    content: 'Progressive Cleaning';
+  }
+
+  66% {
+    content: 'OneStop Pro Plumbing, Heating,Cooling & Electric';
+  }
 }
 
 #header-bars {
@@ -638,6 +688,10 @@ a,
   margin-bottom: 50px;
 }
 
+#header-bars i:hover {
+  cursor: pointer;
+}
+
 #header-footer {
   color: white;
   margin-left: 145px;
@@ -646,4 +700,5 @@ a,
 
 #header-note {
   font-weight: bold;
+  color: white;
 }
