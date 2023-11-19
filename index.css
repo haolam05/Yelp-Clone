@@ -428,9 +428,29 @@ a,
   display: flex;
   background-image: url('images/header/hvac.jpg');
   height: 575px;
-  background-size: contain;
+  background-size: cover;
   margin-bottom: 40px;
+
+  animation-name: switch;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(1, end);
 }
+
+@keyframes switch {
+  0% {
+    background-image: url('images/header/pho.jpg');
+  }
+
+  33% {
+    background-image: url('images/header/home-cleaner.jpg');
+  }
+
+  66% {
+    background-image: url('images/header/hvac.jpg');
+  }
+}
+
 
 #header-nav-bar {
   display: flex;
@@ -496,6 +516,7 @@ a,
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 #yelp-for-business {
